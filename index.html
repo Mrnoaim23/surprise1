@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Untuk Kamu yang Spesial 💌</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Musik romantis (opsional) -->
+  <audio id="bgMusic" src="tulus.mp3" autoplay loop></audio>
+
+  <!-- Emoji hati latar -->
+  <div class="love-background"></div>
+
+  <!-- Konten utama -->
+  <div class="container glass">
+    <h1 class="title">Hai Kamu ❤️</h1>
+    <p id="typewriter" class="typewriter"></p>
+
+    <!-- Tombol Lihat Pesan -->
+    <button id="revealButton" onclick="revealMessage()">Lihat Pesan Cinta</button>
+
+    <!-- Slide panjang, langsung muncul 1 per klik -->
+<div id="slides" class="hidden slide-box">
+  <div class="slide active">
+    <p>
+      Hai kamu, sejak pertama kali aku melihat senyumanmu, aku tahu bahwa kamu akan jadi bagian penting dalam hidupku.
+      Bukan karena cantik mu, tapi karena caramu membuatku merasa cukup hanya dengan menjadi diriku sendiri.
+    </p>
+  </div>
+  <div class="slide">
+    <p>
+      Aku tidak tahu bagaimana caranya menjelaskan rasa ini. Tapi setiap kali kamu hadir, dunia terasa lebih ringan,
+      dan semua masalah menjadi tidak penting. Kamu adalah ketenangan dalam ributnya hariku.
+    </p>
+  </div>
+  <div class="slide">
+    <p>
+      Jika suatu hari kamu merasa lelah, jangan lupa — aku ada di sini. Tidak untuk menyelesaikan semua masalahmu,
+       dan menemanimu melewati semuanya. Karena cinta itu bukan soal sempurna, tapi soal saling bertahan.
+    </p>
+  </div>
+  <div class="slide">
+    <p>
+      Terima kasih karena sudah hadir. Kamu adalah anugerah yang tak pernah aku minta, tapi sangat aku syukuri. 
+      Jika cinta adalah perjalanan, maka aku ingin menempuhnya bersamamu... sampai akhir waktu.
+    </p>
+  </div>
+
+  <!-- Tombol next -->
+  <button onclick="nextSlide()" class="next-btn">➡️ Next</button>
+</div>
+
+    <!-- Foto Kenangan -->
+    <div class="photo-frame hidden" id="surprisePhoto">
+      <img src="User.jpeg" alt="Kenangan Kita" />
+      <p class="caption">Senyumanmu mengisi hari-hariku 📷</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

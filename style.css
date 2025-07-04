@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 30px;
+  text-align: center;
+  border-radius: 25px;
+  position: relative;
+  z-index: 10;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  color: white;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.typewriter {
+  font-size: 1.2em;
+  min-height: 60px;
+  white-space: pre-wrap;
+  overflow: hidden;
+  border-right: .15em solid #fff;
+  animation: blink-caret 0.8s step-end infinite;
+}
+
+@keyframes blink-caret {
+  50% { border-color: transparent; }
+}
+
+.photo-frame {
+  margin: 25px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 300px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.photo-frame img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+.caption {
+  font-style: italic;
+  margin-top: 10px;
+  color: #ffe6e6;
+  text-shadow: 0 1px 2px #000;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 15px;
+  background: #ff6f61;
+  color: white;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px #ff6f61;
+}
+
+button:hover {
+  background: #ff4e50;
+  box-shadow: 0 0 20px #ff4e50;
+  transform: scale(1.05);
+}
+
+.message-box {
+  margin-top: 25px;
+  padding: 20px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  font-size: 1.2em;
+  animation: fadeIn 1.5s ease forwards;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* LOVE ANIMATION */
+.love-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.heart {
+  position: absolute;
+  color: red;
+  font-size: 20px;
+  animation: floatUp 6s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1.5);
+    opacity: 0;
+  }
+}
+.slide-box {
+  margin-top: 30px;
+}
+
+.slide {
+  display: none;
+  font-size: 1.2em;
+  padding: 15px 20px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.slide.active {
+  display: block;
+}
+
+.next-btn {
+  padding: 10px 25px;
+  font-size: 1em;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff6f61;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #ff6f61;
+  margin-top: 15px;
+}
+
+.next-btn:hover {
+  background-color: #ff4e50;
+}
+
+.hidden {
+  display: none;
+}
