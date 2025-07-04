@@ -8,17 +8,24 @@
 </head>
 <body>
   <!-- Musik -->
-  <audio id="bgMusic" src="tulus.mp3" autoplay loop></audio>
+  <audio id="bgMusic" src="music.mp3" loop></audio>
+
+
 
   <!-- Latar love emoji -->
   <div class="love-background"></div>
 
   <!-- Kontainer utama -->
   <div class="container glass">
-    <h1>Hai Kamu ❤️</h1>
-    <p id="typewriter" class="typewriter"></p>
+   <!-- WRAPPER UNTUK TENGAHKAN -->
+<div id="introWrapper" class="intro-wrapper">
+  <h1>Hai Kamu ❤️</h1>
+  <p id="typewriter" class="typewriter"></p>
+  <button id="revealButton" onclick="revealMessage()">Lihat Pesan Cinta</button>
+</div>
 
-    <button id="revealButton" onclick="revealMessage()">Lihat Pesan Cinta</button>
+<!-- Setelah ini, tampilkan konten lain seperti slides & foto -->
+
 
     <div id="slides" class="hidden slide-box">
       <div class="slide active">
@@ -53,7 +60,7 @@
       <p class="caption">Senyummu, kenangan paling indah 📷</p>
     </div>
   </div>
-
   <script src="script.js"></script>
+  <div id="spacer" style="height: 100vh;"></div>
 </body>
 </html>

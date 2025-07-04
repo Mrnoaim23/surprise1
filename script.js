@@ -1,8 +1,9 @@
 // Efek mesin ketik
-const typewriterText = "Aku punya sesuatu yang ingin aku sampaikan padamu...";
+const typewriterText = "Aku punya sesuatu yang ingin aku sampaikan padamu...tapiiii bacanya pelan-pelan aja sambil dengar musiknya";
 let i = 0;
 
 function typeWriter() {
+
   if (i < typewriterText.length) {
     document.getElementById("typewriter").textContent += typewriterText.charAt(i);
     i++;
@@ -10,12 +11,15 @@ function typeWriter() {
   }
 }
 typeWriter();
-
-// Tampilkan pesan & foto
 function revealMessage() {
+  const music = document.getElementById("bgMusic");
+  music.play().catch(e => console.warn("Gagal play musik:", e));
   document.getElementById("slides").classList.remove("hidden");
   document.getElementById("surprisePhoto").classList.remove("hidden");
   document.getElementById("revealButton").style.display = "none";
+  document.getElementById("introWrapper").style.minHeight = "auto";
+  document.getElementById("introWrapper").style.alignItems = "flex-start";
+   document.getElementById("spacer").remove();
 }
 
 // Slide kalimat panjang
