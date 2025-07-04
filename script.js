@@ -17,10 +17,10 @@ function revealMessage() {
   document.getElementById("slides").classList.remove("hidden");
   document.getElementById("surprisePhoto").classList.remove("hidden");
   document.getElementById("revealButton").style.display = "none";
-  document.getElementById("introWrapper").style.minHeight = "auto";
-  document.getElementById("introWrapper").style.alignItems = "flex-start";
-   document.getElementById("spacer").remove();
+   document.getElementById("introWrapper").style.minHeight = "auto";
+      document.getElementById("introWrapper").style.alignItems = "flex-start";
 }
+
 
 // Slide kalimat panjang
 let currentSlide = 0;
