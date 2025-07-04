@@ -5,22 +5,24 @@
 }
 
 body {
-background: linear-gradient(to top, #ff9a9e, #fad0c4);
-
-
-  color: white;
+  background: linear-gradient(to top, #ff9a9e, #fad0c4);
+  color: #333;
   font-family: 'Segoe UI', sans-serif;
   overflow-x: hidden;
-  padding-bottom: 60px;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  max-width: 700px;
-  margin: 80px auto;
-  padding: 30px 20px;
+  width: 90%;
+  max-width: 600px;
+  margin: 80px auto 60px;
+  padding: 20px;
   text-align: center;
+  position: relative;
   z-index: 2;
 }
+
 
 h1 {
   font-size: 2em;
@@ -133,14 +135,26 @@ audio {
   display: none;
 }
 
-/* Responsif */
 @media screen and (max-width: 600px) {
-  .container {
-    padding: 20px 10px;
-    margin: 40px auto;
+  h1 {
+    font-size: 1.4em;
   }
 
-  h1 {
-    font-size: 1.5em;
+  .typewriter {
+    font-size: 1em;
+  }
+
+  .slide p {
+    font-size: 1em;
+  }
+
+  button {
+    width: 90%;
+    font-size: 1em;
+  }
+
+  .photo-frame img {
+    width: 100%;
+    height: auto;
   }
 }
