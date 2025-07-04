@@ -2,60 +2,55 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Untuk Kamu yang Spesial 💌</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Untukmu yang Spesial 💌</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Musik romantis (opsional) -->
+  <!-- Musik -->
   <audio id="bgMusic" src="tulus.mp3" autoplay loop></audio>
 
-  <!-- Emoji hati latar -->
+  <!-- Latar love emoji -->
   <div class="love-background"></div>
 
-  <!-- Konten utama -->
+  <!-- Kontainer utama -->
   <div class="container glass">
-    <h1 class="title">Hai Kamu ❤️</h1>
+    <h1>Hai Kamu ❤️</h1>
     <p id="typewriter" class="typewriter"></p>
 
-    <!-- Tombol Lihat Pesan -->
     <button id="revealButton" onclick="revealMessage()">Lihat Pesan Cinta</button>
 
-    <!-- Slide panjang, langsung muncul 1 per klik -->
-<div id="slides" class="hidden slide-box">
-  <div class="slide active">
-    <p>
-      Hai kamu, sejak pertama kali aku melihat senyumanmu, aku tahu bahwa kamu akan jadi bagian penting dalam hidupku.
-      Bukan karena cantik mu, tapi karena caramu membuatku merasa cukup hanya dengan menjadi diriku sendiri.
-    </p>
-  </div>
-  <div class="slide">
-    <p>
-      Aku tidak tahu bagaimana caranya menjelaskan rasa ini. Tapi setiap kali kamu hadir, dunia terasa lebih ringan,
-      dan semua masalah menjadi tidak penting. Kamu adalah ketenangan dalam ributnya hariku.
-    </p>
-  </div>
-  <div class="slide">
-    <p>
-      Jika suatu hari kamu merasa lelah, jangan lupa — aku ada di sini. Tidak untuk menyelesaikan semua masalahmu,
-       dan menemanimu melewati semuanya. Karena cinta itu bukan soal sempurna, tapi soal saling bertahan.
-    </p>
-  </div>
-  <div class="slide">
-    <p>
-      Terima kasih karena sudah hadir. Kamu adalah anugerah yang tak pernah aku minta, tapi sangat aku syukuri. 
-      Jika cinta adalah perjalanan, maka aku ingin menempuhnya bersamamu... sampai akhir waktu.
-    </p>
-  </div>
+    <div id="slides" class="hidden slide-box">
+      <div class="slide active">
+        <p>
+          Saat kamu hadir, aku tahu hidupku akan berubah. Bukan karena keindahanmu saja,
+          tapi karena kedamaian yang kamu bawa dalam hatiku.
+        </p>
+      </div>
+      <div class="slide">
+        <p>
+          Aku mungkin bukan yang terbaik, tapi aku ingin jadi yang paling tulus mencintaimu,
+          dengan cara paling sederhana dan penuh rasa.
+        </p>
+      </div>
+      <div class="slide">
+        <p>
+          Dalam doa yang tak pernah terdengar, namamulah yang paling sering kusebut.
+          Karena kamu adalah anugerah yang tak pernah kucari, tapi sangat aku syukuri.
+        </p>
+      </div>
+      <div class="slide">
+        <p>
+          Jika kamu lelah, peluk aku. Karena pelukanmu adalah tempat paling damai untukku kembali.
+          Terima kasih karena sudah menjadi rumah untuk hatiku.
+        </p>
+      </div>
+      <button onclick="nextSlide()" class="next-btn">➡️ Next</button>
+    </div>
 
-  <!-- Tombol next -->
-  <button onclick="nextSlide()" class="next-btn">➡️ Next</button>
-</div>
-
-    <!-- Foto Kenangan -->
     <div class="photo-frame hidden" id="surprisePhoto">
       <img src="User.jpeg" alt="Kenangan Kita" />
-      <p class="caption">Senyumanmu mengisi hari-hariku 📷</p>
+      <p class="caption">Senyummu, kenangan paling indah 📷</p>
     </div>
   </div>
 

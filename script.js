@@ -1,4 +1,4 @@
-// Typewriter effect
+// Efek mesin ketik
 const typewriterText = "Aku punya sesuatu yang ingin aku sampaikan padamu...";
 let i = 0;
 
@@ -11,14 +11,14 @@ function typeWriter() {
 }
 typeWriter();
 
-// Tampilkan slide dan foto
+// Tampilkan pesan & foto
 function revealMessage() {
   document.getElementById("slides").classList.remove("hidden");
   document.getElementById("surprisePhoto").classList.remove("hidden");
   document.getElementById("revealButton").style.display = "none";
 }
 
-// Ganti slide
+// Slide kalimat panjang
 let currentSlide = 0;
 function nextSlide() {
   const slides = document.querySelectorAll(".slide");
@@ -29,13 +29,13 @@ function nextSlide() {
   slides[currentSlide].classList.add("active");
 }
 
-// Efek love terbang
+// Efek hati terbang
 setInterval(() => {
   const heart = document.createElement("div");
   heart.classList.add("heart");
   heart.textContent = "❤️";
   heart.style.left = Math.random() * 100 + "vw";
-  heart.style.fontSize = Math.random() * 15 + 15 + "px";
+  heart.style.fontSize = Math.random() * 20 + 10 + "px";
   document.querySelector(".love-background").appendChild(heart);
   setTimeout(() => heart.remove(), 6000);
 }, 300);
